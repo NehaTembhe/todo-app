@@ -69,7 +69,15 @@ A simple To-Do app built with React that allows users to add, manage, and track 
 
 ## Screenshots
 
-![Todo App Screenshot](link_to_screenshot.png)
+![Todo App Screenshot]!![Screenshot 2025-01-24 225611](https://github.com/user-attachments/assets/5042ca74-9d69-41ee-b2cc-8b537ca0052d)
+![Screenshot 2025-01-24 225625](https://github.com/user-attachments/assets/ff73cc33-fecd-4ebe-8ae0-f4b58fc90b68)
+![Screenshot 2025-01-24 225726](https://github.com/user-attachments/assets/a912e039-8005-49af-8ef2-4242cc333757)
+![Screenshot 2025-01-24 225658](https://github.com/user-attachments/assets/99054e43-b0a3-440d-acf1-d645902a9b69)
+
+
+
+
+
 
 ## Contributing
 
