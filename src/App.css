@@ -1,0 +1,341 @@
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-header img { /* Logo */
+  width: 50px;
+  height: 50px;
+  margin-left: 10px; /* Add margin to create space between logo and text */
+}
+
+.sidebar-header h1 {
+  margin: left;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.user-profile {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.user-profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px; /* Increased margin-top to move the list further down */
+}
+
+nav li {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px; /* Added margin-top for further space between profile and the nav items */
+}
+
+nav li span {
+  margin-left: 8px;
+}
+
+nav li svg {
+  margin-right: 5px;
+}
+
+
+.add-list-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header .actions {
+  display: flex;
+  align-items: center;
+}
+
+.header .actions i { /* Replace with actual icon libraries */
+  margin-right: 10px;
+}
+
+.to-do {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.task-input {
+  display: flex;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.task-input button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-lists {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.task-list {
+  width: 45%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.task-list h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.task-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.priority-high {
+  color: red;
+}
+
+.priority-medium {
+  color: orange;
+}
+
+.progress-bar {
+  height: 20px;
+  background-color: #eee;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #4CAF50;
+  width: 70%;
+  border-radius: 5px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+.header .actions svg { 
+  margin-right: 10px; 
+  color: #999; 
+}
+
+.to-do {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+  }
+
+  .task-list {
+    width: 100%;
+    margin-right: 0;
+  }
+/* Style for the TodayTasks card */
+.today-tasks-card {
+  background: linear-gradient(135deg, #f8f8f8, #f0f0f0);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.today-tasks-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Typography */
+.today-tasks-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.task-count {
+  color: #555;
+  font-size: 1rem;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+/* Chart container */
+.chart-container {
+  height: 200px;
+  position: relative;
+  margin: 20px 0;
+}
+
+/* Legend styling */
+.legend {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+}
+.priority-icon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.task-list li {
+  display: flex;
+   /* This ensures the star is on the rightmost side */
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.task-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  display: grid;
+  grid-template-columns: 1fr auto; /* Task content on the left, star on the right */
+  align-items: center;
+  margin: 10px 0;
+}
+
+.task-item input[type='checkbox'] {
+  margin-right: 10px;
+}
+
+.task-item span {
+  display: inline-block;
+}
+
+.priority-icon {
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 10px;
+  justify-self: end; /* Push the star to the rightmost column */
+}
+
+.high-priority {
+  color: rgb(255, 0, 0);
+}
+
+.medium-priority {
+  color: silver;
+}
+.task-item.completed span {
+  text-decoration: line-through; /* Adds a strikethrough effect */
+  color: rgb(17, 16, 16); /* Optional: Make it visually distinct */
+}
+
+.task-options {
+  position: relative;
+}
+
+.bell-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.bell-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.bell-dropdown ul li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.bell-dropdown ul li:hover {
+  background-color: #f0f0f0;
+}
+.react-datepicker-popper {
+  z-index: 1050; /* Higher than other elements on the page */
+}
